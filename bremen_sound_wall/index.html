@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bremen Sound Wall</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="overlay">
+        <h1>OH, BREMEN</h1>
+        <p>Sound Reactive Experience</p>
+        <button id="start-btn">Start Experience</button>
+    </div>
+    <!-- Fallback SVG Logo since generation failed -->
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMTAwIj4KICA8c3R5bGU+CiAgICAudGV4dCB7IGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmOyBmb250LXdlaWdodDogYm9sZDsgZm9udC1zaXplOiA0MHB4OyBmaWxsOiBibGFjazsgfQogIDwvc3R5bGU+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ0ZXh0Ij5CUkVNRU4gQkFDS1lBUkQ8L3RleHQ+Cjwvc3ZnPg=="
+        id="main-logo" alt="Bremen Backyard">
+    <canvas id="gl"></canvas>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
